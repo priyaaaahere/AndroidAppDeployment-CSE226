@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit1.custom_list_view.task1.TeamSelected"
+            android:exported="false" />
+        <activity
+            android:name="unit1.custom_list_view.task1.CustomListViewMain"
+            android:exported="false" />
+        <activity
+            android:name="unit1.custom_grid_view.task2.ShoeGridMain"
+            android:exported="true" />
+        <activity
             android:name="unit1.custom_grid_view.GridMain"
             android:exported="true" />
         <activity

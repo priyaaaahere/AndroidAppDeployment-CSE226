@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:strokeColor="#1E88E5"
+    app:strokeWidth="1.5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="0dp"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Player image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="0dp"
+            android:layout_height="210dp"
+            android:background="#66000000"
+            app:layout_constraintTop_toTopOf="@id/img_flag"
+            app:layout_constraintBottom_toBottomOf="@id/img_flag"
+            app:layout_constraintStart_toStartOf="@id/img_flag"
+            app:layout_constraintEnd_toEndOf="@id/img_flag" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/txt_ranking"
+            style="@style/Widget.Material3.Chip.Suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#FF6D00"
+            app:chipIconTint="#FFFFFF"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
+            app:layout_constraintTop_toTopOf="@id/img_flag"
+            app:layout_constraintEnd_toEndOf="@id/img_flag"
+            android:layout_margin="12dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Team Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/img_flag"
+            app:layout_constraintStart_toStartOf="@id/img_flag"
+            app:layout_constraintEnd_toEndOf="@id/img_flag"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="48dp" />
+
+
+        <LinearLayout
+            android:id="@+id/content_block"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/img_flag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_team_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team info goes here..."
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#37474F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textStyle="bold"
+                    android:textColor="#263238" />
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:isIndicator="true" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_rating_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.4"
+                    android:textStyle="bold"
+                    android:textColor="#1E88E5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:weightSum="3">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_play_anthem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Play Anthem"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:icon="@android:drawable/ic_media_play"
+                    android:backgroundTint="#1E88E5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="Share"
+                    android:textAllCaps="false"
+                    android:textColor="#0D47A1"
+                    android:icon="@android:drawable/ic_menu_share"
+                    android:backgroundTint="#BBDEFB" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_more"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="More"
+                    android:textAllCaps="false"
+                    android:textColor="#1E88E5"
+                    app:strokeColor="#1E88E5"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:background="#22000000"
+            app:layout_constraintTop_toBottomOf="@id/img_flag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
