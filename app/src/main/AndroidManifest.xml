@@ -13,10 +13,10 @@
         android:theme="@style/Theme.CSE226ETP">
         <activity
             android:name="unit1.custom_list_view.task1.TeamSelected"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="unit1.custom_list_view.task1.CustomListViewMain"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="unit1.custom_grid_view.task2.ShoeGridMain"
             android:exported="true" />
