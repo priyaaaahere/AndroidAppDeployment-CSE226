@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit1.custom_list_view.task2.CustomCompanyMain"
+            android:exported="true" />
+        <activity
             android:name="unit1.custom_list_view.task1.TeamSelected"
             android:exported="true" />
         <activity
