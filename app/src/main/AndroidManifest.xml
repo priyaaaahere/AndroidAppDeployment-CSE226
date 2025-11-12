@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit1.card_view.task1.CardViewMain"
+            android:exported="true" />
+        <activity
             android:name="unit1.recycler_view.task1.RecyclerMain"
             android:exported="true" />
         <activity
