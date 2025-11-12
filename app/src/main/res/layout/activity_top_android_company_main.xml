@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:title="Top 20 Android Companies in Chandigarh"
+        android:titleTextColor="@android:color/white"
+        android:padding="16dp"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <!-- GridView with 2 columns -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="12dp"
+        android:verticalSpacing="20dp"
+        android:stretchMode="columnWidth"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+</LinearLayout>
