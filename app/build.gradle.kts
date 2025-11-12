@@ -45,4 +45,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //unit 2
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+    implementation(libs.lifecycle.livedata)
+    implementation(libs.lifecycle.viewmodel)
 }

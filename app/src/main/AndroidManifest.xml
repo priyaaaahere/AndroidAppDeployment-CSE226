@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit2.task1.CoroutineMain"
+            android:exported="true" />
+        <activity
             android:name="unit1.custom_grid_view.task3.TopAndroidCompanyMain"
             android:exported="true" />
         <activity
