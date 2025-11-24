@@ -15,8 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit4.sqlite.task2.Login"
+            android:exported="true" />
+        <activity
+            android:name="unit4.sqlite.task2.SQLmain"
+            android:exported="true" />
+        <activity
             android:name="unit4.sqlite.task1.SqlMainActivity"
             android:exported="true" />
+
         <service
             android:name=".unit3.MyBoundService"
             android:exported="false" />
