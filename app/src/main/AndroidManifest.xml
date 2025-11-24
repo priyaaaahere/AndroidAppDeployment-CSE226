@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit4.roomdb.RoomDatabaseMain"
+            android:exported="true" />
+        <activity
             android:name="unit4.sqlite.task2.Login"
             android:exported="true" />
         <activity

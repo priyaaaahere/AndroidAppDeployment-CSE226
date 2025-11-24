@@ -7,8 +7,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.cse226_etp.R
 import kotlin.jvm.java
 
@@ -19,7 +17,7 @@ class SQLmain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sqlmain)
+        setContentView(R.layout.activity_sql_main2)
 
         dbHelper = UserDatabaseHelper(this)
 

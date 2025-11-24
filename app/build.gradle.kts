@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,4 +55,9 @@ dependencies {
     implementation(libs.coroutines.android)
     implementation(libs.lifecycle.livedata)
     implementation(libs.lifecycle.viewmodel)
+    //unit 4
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    implementation(libs.lifecycle.viewmodel.ktx)
+    kapt(libs.room.compiler)
 }
