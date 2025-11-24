@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit2.task2.CompanyListActivity"
+            android:exported="true" />
+        <activity
+            android:name="unit2.task2.CoroutinesActivityMain"
+            android:exported="true" />
+        <activity
             android:name="unit2.task1.CoroutineMain"
             android:exported="true" />
         <activity
@@ -22,9 +28,6 @@
             android:exported="true" />
         <activity
             android:name="unit1.recycler_view.task1.RecyclerMain"
-            android:exported="true" />
-        <activity
-            android:name="unit1.custom_list_view.task2.CustomCompanyMain"
             android:exported="true" />
         <activity
             android:name="unit1.custom_list_view.task1.TeamSelected"

@@ -1,4 +1,4 @@
-package unit1.custom_list_view.task2
+package unit2.task2
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.cse226_etp.R
+import unit1.custom_list_view.task1.CustomListViewMain
 import kotlin.jvm.java
 
 class AdapterCustomCompanies(
@@ -35,7 +36,7 @@ class AdapterCustomCompanies(
         name.text = category.name
 
         view.setOnClickListener {
-            val intent = Intent(context, CustomCompanyMain::class.java)
+            val intent = Intent(context, CompanyListActivity::class.java)
             intent.putExtra("CATEGORY_NAME", category.name)
             context.startActivity(intent)
         }

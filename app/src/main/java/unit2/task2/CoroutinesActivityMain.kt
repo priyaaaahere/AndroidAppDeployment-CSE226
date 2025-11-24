@@ -1,18 +1,16 @@
-package unit1.custom_list_view.task2
+package unit2.task2
 
 import android.os.Bundle
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.cse226_etp.R
 
-class CustomCompanyMain : AppCompatActivity() {
+class CoroutinesActivityMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_custom_company_main)
+        setContentView(R.layout.activity_coroutines_main)
 
         val listView = findViewById<ListView>(R.id.listViewMain)
 
@@ -25,6 +23,5 @@ class CustomCompanyMain : AppCompatActivity() {
 
         val adapter = AdapterCustomCompanies(this, categories)
         listView.adapter = adapter
-
     }
 }
