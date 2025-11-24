@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit5.googleMaps.task1.GoogleMapsMain"
+            android:exported="true" />
+        <activity
             android:name="unit5.geoAndReverseGeoCoding.GeoReverseGeoCodingMain"
             android:exported="true" />
         <activity
@@ -85,6 +88,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="ADD_YOUR_API_KEY" />
     </application>
 
 </manifest>

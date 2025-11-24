@@ -60,4 +60,11 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     kapt(libs.room.compiler)
+    //unit5
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.google.maps)
+    implementation(libs.google.location)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.kotlinx.coroutines)
 }
