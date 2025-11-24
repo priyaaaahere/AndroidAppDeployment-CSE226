@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit3.services_in_class.MainActivity">
+    <Button
+        android:id="@+id/btnStartStarteddService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start started service"
+        />
+    <Button
+        android:id="@+id/btnStopStartedService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop started service"
+        />
+    <Button
+        android:id="@+id/btnBindBoundService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind bound service"
+        />
+    <Button
+        android:id="@+id/btnUnbindBoundService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Bound service"
+        />
+    <Button
+        android:id="@+id/btnStartForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start foreground service"
+        />
+    <Button
+        android:id="@+id/btnStopForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop foreground service"
+        />
+
+
+
+</LinearLayout>
