@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,14 +14,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
-
-
-        <service android:name=".unit3.MyBoundService"
+        <activity
+            android:name="unit4.sqlite.task1.SqlMainActivity"
+            android:exported="true" />
+        <service
+            android:name=".unit3.MyBoundService"
             android:exported="false" />
-        <service android:name=".unit3.MyForegroundService"
+        <service
+            android:name=".unit3.MyForegroundService"
             android:exported="false" />
-        <service android:name=".unit3.MyStartedService"
-            android:exported="false"/>
+        <service
+            android:name=".unit3.MyStartedService"
+            android:exported="false" />
+
         <activity
             android:name=".unit3.ServicesMain"
             android:exported="true" />
@@ -66,8 +72,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
