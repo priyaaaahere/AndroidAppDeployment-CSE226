@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit1.recycler_view.task2.ContactMain"
+            android:exported="true" />
+        <activity
             android:name="unit2.task2.CompanyListActivity"
             android:exported="true" />
         <activity
