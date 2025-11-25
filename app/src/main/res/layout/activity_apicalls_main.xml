@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Google Map -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <!-- Button to Get Address -->
+    <Button
+        android:id="@+id/btnGetAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Address"
+        android:layout_below="@id/mapFragment"
+        android:layout_margin="8dp" />
+
+    <!-- Button to Zoom to Current Location -->
+    <Button
+        android:id="@+id/btnZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zoom to My Location"
+        android:layout_below="@id/btnGetAddress"
+        android:layout_margin="8dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnZoom"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

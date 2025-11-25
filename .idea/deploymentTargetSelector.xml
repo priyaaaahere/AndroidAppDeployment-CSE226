@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ServicesMain (2)">
+      <SelectionState runConfigName="GoogleMapsListOfPlaces">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SqlMainActivity">
+      <SelectionState runConfigName="APIcallsMain">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SQLmain">
+      <SelectionState runConfigName="APIcallsMain (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="RoomDatabaseMain">
+      <SelectionState runConfigName="APIcallsMain (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SqlMainActivity (1)">
+      <SelectionState runConfigName="GoogleMapsMain">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
