@@ -8,9 +8,6 @@
       <SelectionState runConfigName="GoogleMapsListOfPlaces">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="APIcallsMain">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="APIcallsMain (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>

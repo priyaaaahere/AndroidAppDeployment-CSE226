@@ -67,4 +67,11 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.kotlinx.coroutines)
+
+    // Unit 6
+    // the below 3 are already added above so no need to add )it is commented)
+//    testImplementation(libs.junit)
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.espresso.core)
+    testImplementation(kotlin("test"))
 }
