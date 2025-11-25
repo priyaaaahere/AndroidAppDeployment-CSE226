@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit6.expressoTesting.task1.EspressoTaskMain"
+            android:exported="true" />
+        <activity
             android:name="unit5.googleMaps.retrofit.APIcallsMain"
             android:exported="true" />
         <activity
