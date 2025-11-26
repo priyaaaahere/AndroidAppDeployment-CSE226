@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,6 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
+        <activity
+            android:name="unit6.expressoTesting.notesTask.NoteMain"
+            android:exported="true" />
+        <activity
+            android:name="unit6.expressoTesting.task2.EspressoTesting2"
+            android:exported="true" />
         <activity
             android:name="unit6.expressoTesting.task1.EspressoTaskMain"
             android:exported="true" />
@@ -55,7 +62,8 @@
             android:exported="false" />
         <service
             android:name=".unit3.MyForegroundService"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
         <service
             android:name=".unit3.MyStartedService"
             android:exported="false" />
@@ -108,7 +116,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCTQZ_LBZ0Qb8s0t-26vfaREbHZIzTXrHI" />
+            android:value="YOUR_API_KEY" />
     </application>
 
 </manifest>

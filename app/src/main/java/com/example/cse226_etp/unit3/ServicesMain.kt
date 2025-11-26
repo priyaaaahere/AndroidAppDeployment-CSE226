@@ -10,7 +10,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cse226_etp.R
-import kotlin.jvm.java
+
 
 class ServicesMain : AppCompatActivity() {
 
@@ -56,6 +56,7 @@ class ServicesMain : AppCompatActivity() {
             if(isBound){
                 unbindService(connection)
                 isBound=false
+                Toast.makeText(this, "Bound Service Unbound", Toast.LENGTH_SHORT).show()
             }
         }
         startForeground.setOnClickListener{

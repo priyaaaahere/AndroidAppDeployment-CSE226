@@ -25,15 +25,6 @@ class GoogleMapsMain : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
-//    override fun onMapReady(googleMap: GoogleMap) {
-//        mMap = googleMap
-//
-//        // Example: Add a marker and move the camera
-//        val sydney = LatLng(-34.0, 151.0)
-//        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10f))
-//    }
-
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 

@@ -5,16 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="GoogleMapsListOfPlaces">
+      <SelectionState runConfigName="GoogleMapsListOfPlaces (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="APIcallsMain (1)">
+      <SelectionState runConfigName="GoogleMapsMain (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="APIcallsMain (2)">
+      <SelectionState runConfigName="GoogleMapsListOfPlaces (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="GoogleMapsMain">
+      <SelectionState runConfigName="GoogleMapsMain (2)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ServicesMain">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
