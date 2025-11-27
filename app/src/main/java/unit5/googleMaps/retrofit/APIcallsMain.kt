@@ -138,7 +138,7 @@ class APIcallsMain : AppCompatActivity(), OnMapReadyCallback {
         mMap?.uiSettings?.isRotateGesturesEnabled = true
 
 
-        // ✅ Enable blue dot (my lccation)
+        // ✅ Enable blue dot (my location)
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION

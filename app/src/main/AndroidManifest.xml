@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSE226ETP">
         <activity
+            android:name="unit1.custom_list_view.task2.StudentMain"
+            android:exported="true" />
+        <activity
             android:name="unit6.expressoTesting.notesTask.NoteMain"
             android:exported="true" />
         <activity
@@ -116,7 +119,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyDGXbNAxjCcR_cOYwOXknlX1YOyS6Ds8X0" />
     </application>
 
 </manifest>

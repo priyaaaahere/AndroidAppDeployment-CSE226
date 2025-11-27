@@ -11,6 +11,7 @@ class AppCalculatorTest {
     fun testAddition(){
         assertEquals(4,calc.addition(2,2))
     }
+    @Test
     fun subtraction(){
         assertEquals(0,calc.subtract(2,2))
     }

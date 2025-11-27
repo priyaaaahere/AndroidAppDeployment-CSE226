@@ -21,7 +21,6 @@ class NoteMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_note_main)
         binding = ActivityNoteMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

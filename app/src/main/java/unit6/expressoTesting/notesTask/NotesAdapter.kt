@@ -22,7 +22,6 @@ class NotesAdapter(
         )
         return NoteVH(binding)
     }
-
     override fun onBindViewHolder(holder: NotesAdapter.NoteVH, position: Int) {
         val note = notes[position]
         holder.binding.tvNote.text = note.text
@@ -31,6 +30,5 @@ class NotesAdapter(
             onDelete(note)
         }
     }
-
     override fun getItemCount() = notes.size
 }
