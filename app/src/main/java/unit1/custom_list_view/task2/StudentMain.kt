@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.cse226_etp.R
+import unit1.custom_listview.task2.StudentAdapter
 
 class StudentMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class StudentMain : AppCompatActivity() {
             Student("Divyanshu",104,"CSE")
         )
 
-        val adapter=StudentAdapter(this,students)
+        val adapter= StudentAdapter(this, students)
         listView.adapter=adapter
 
         listView.setOnItemClickListener{_,_,position,_->

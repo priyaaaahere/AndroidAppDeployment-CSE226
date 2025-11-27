@@ -1,4 +1,4 @@
-package unit1.custom_list_view.task2
+package unit1.custom_listview.task2
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,44 +6,36 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import androidx.activity.contextaware.ContextAware
-import androidx.recyclerview.widget.RecyclerView
 import com.example.cse226_etp.R
+import unit1.custom_list_view.task2.Student
 
 class StudentAdapter(
     private val context: Context,
-    private val students: ArrayList<Student>
-    ) : BaseAdapter(){
-    override fun getItem(position: Int): Any=students[position]
+    private val students: List<Student>
+) : BaseAdapter() {
+
+    private val inflater = LayoutInflater.from(context)
+
     override fun getCount(): Int = students.size
-    override fun getItemId(position: Int): Long=position.toLong()
-    override fun getView(position:Int, convertView: View?,parent: ViewGroup):View {
-        val view: View
-        val holder: ViewHolder
-        if (convertView == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.student_item, parent, false)
-            holder = ViewHolder(
-                view.findViewById(R.id.tvName),
-                view.findViewById(R.id.tvRoll),
-                view.findViewById(R.id.tvDept)
-            )
-            view.tag = holder
-        } else {
-            view = convertView
-            holder = convertView.tag as ViewHolder
-        }
 
-        val student = students[position]
+    override fun getItem(position: Int): Any = students[position]
 
-        holder.tvName.text = student.name
-        holder.tvRoll.text = "Roll: ${student.roll}"
-        holder.tvDept.text = "Dept: ${student.course}"
+    override fun getItemId(position: Int): Long = position.toLong()
 
-        return view
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+
+        val rowView = convertView ?: inflater.inflate(R.layout.student_item, parent, false)
+
+        val tvName = rowView.findViewById<TextView>(R.id.tvName)
+        val tvRoll = rowView.findViewById<TextView>(R.id.tvRoll)
+        val tvDept = rowView.findViewById<TextView>(R.id.tvDept)
+
+        val student = getItem(position) as Student
+
+        tvName.text = student.name
+        tvRoll.text = "Roll: ${student.roll}"
+        tvDept.text = "Dept: ${student.course}"
+
+        return rowView
     }
-    class ViewHolder(
-        val tvName: TextView,
-        val tvRoll: TextView,
-        val tvDept: TextView
-    )
 }
